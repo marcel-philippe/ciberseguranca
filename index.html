@@ -45,17 +45,25 @@
 
 
   <style>
+    body {
+    overflow-x: hidden; /* Impede a exibição da barra de rolagem horizontal */
+    }
   
     .slick-slide {
       font-size: 24px; /* Tamanho do texto aumentado */
     }
 	
 	.square {
-    position: absolute;
+        position: absolute;
     width: 10px;
     height: 10px;
     background-color: green;
     opacity: 0.5; /* Transparência dos quadrados */
+    /* Limitar a posição dentro da largura da janela de visualização */
+    left: calc(100vw * Math.random()); /* Posição horizontal aleatória */
+    top: calc(100vh * Math.random()); /* Posição vertical aleatória */
+    /* Use transform para garantir que a transição seja suave */
+    transform: translate(-50%, -50%);
 }
 
 .icon-big {
@@ -523,11 +531,13 @@
     });
 	
 	// Função para criar quadrados em posições aleatórias
-function createSquare() {
+    function createSquare() {
     const square = document.createElement('div');
     square.classList.add('square');
-    square.style.left = Math.random() * window.innerWidth + 'px'; // Posição horizontal aleatória
-    square.style.top = Math.random() * window.innerHeight + 'px'; // Posição vertical aleatória
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    square.style.left = Math.random() * windowWidth + 'px'; // Posição horizontal aleatória
+    square.style.top = Math.random() * windowHeight + 'px'; // Posição vertical aleatória
     document.body.appendChild(square);
 
     // Remover quadrado após um tempo
