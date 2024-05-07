@@ -81,12 +81,35 @@
     }
 
     @media only screen and (max-width: 767px) {
-  #loading-container {
-    font-size: 36px; /* Tamanho da fonte para dispositivos móveis */
-    white-space: normal; /* Permitir que o texto quebre automaticamente */
-    word-wrap: break-word; /* Forçar a quebra de palavras */
+    /* Centralizar o conteúdo verticalmente */
+    #fh5co-home .text-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-  }
+    /* Centralizar o texto na tela */
+    #fh5co-home .text-wrap .text-inner {
+        text-align: center;
+    }
+
+    /* Ajustar o tamanho da fonte para dispositivos móveis */
+    #loading-container {
+        font-size: 24px;
+    }
+
+    /* Ajustar o tamanho do logotipo */
+    #fh5co-home img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Ajustar o tamanho do texto */
+    #fh5co-home h2.to-animate {
+        font-size: 18px;
+    }
 }
 
 /* Estilos para tablets */
