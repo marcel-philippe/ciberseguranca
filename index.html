@@ -69,10 +69,28 @@
     #loading-container {
       position: relative;
       top: 50%;
-      font-size: 40px;
-      margin: -30px auto;
       text-align: center;
     }
+
+    @media only screen and (max-width: 767px) {
+  #loading-container {
+    font-size: 24px; /* Tamanho da fonte para dispositivos móveis */
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #loading-container {
+    font-size: 36px; /* Tamanho da fonte para tablets */
+  }
+}
+
+/* Estilos para desktop (largura de tela acima de 1024px) */
+@media only screen and (min-width: 1025px) {
+  #loading-container {
+    font-size: 48px; /* Tamanho da fonte para desktop */
+  }
+}
     
     .glow-effect {
       color: #f00 !important;
@@ -81,7 +99,7 @@
     
     .loading-text {
       display: inline-block;
-      padding: 0 10px;
+      padding: 0 5px;
     }
     </style>
 	</head>
@@ -111,7 +129,7 @@
 						<div class="col-md-8 col-md-offset-2 text-center">
                             <br><br><br>
                             <br><div id="loading-container">FAÇA CIBERSEGURANÇA</div>
-                            <br><br>
+                            <br>
                             <img src="images/logotipo.png">
                             <br><br>
                             <h2 class="to-animate">Desenvolva expertise na defesa de sistemas e dados contra ataques cibernéticos. Adquira habilidades em táticas de invasão para proteger suas redes contra ameaças, realize testes de penetração (pentest) do básico ao avançado e entre para uma das profissões mais requisitadas e bem remuneradas da área.</h2>
