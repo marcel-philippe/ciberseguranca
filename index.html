@@ -144,6 +144,49 @@
       display: inline-block;
       padding: 0 5px;
     }
+
+
+
+    /* Estilo para o ícone do WhatsApp */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Altere o valor para ajustar o tamanho ao passar o mouse */
+}
+
+/* Estilo para o balão de mensagem */
+.tooltip {
+  position: absolute;
+  right: calc(100% + 10px); /* Alterado para posicionar à esquerda */
+  bottom: 50%;
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo do balão */
+  color: #fff; /* Cor do texto */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s, right 0.2s; /* Alterado para ajustar a transição */
+  pointer-events: none;
+}
+
+.whatsapp-icon:hover .tooltip {
+  right: calc(100% + 10px); /* Alterado para posicionar à esquerda */
+  opacity: 1;
+}
+
     </style>
 	</head>
 	<body>
@@ -163,7 +206,7 @@
 	  </div>
 	</header>
 
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/https://ifh.cc/g/Spx7h.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/httaps://ifh.cc/g/Spx7h.jpg);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container-fluid">
 			<div class="text-wrap">
@@ -172,11 +215,12 @@
 						<div class="col-md-8 col-md-offset-2 text-center">
                             <br><br><br>
                             <br><div id="loading-container">CIBERSEGURANÇA</div>
-                            <br>
+                            <h3>CURSO PRESENCIAL COM PRÁTICAS REAIS</h3>
+
                             <img src="images/logotipo.png">
                             <br><br>
                             <h2 class="to-animate">Desenvolva expertise na defesa de sistemas e dados contra ataques cibernéticos. Adquira habilidades em táticas de invasão para proteger suas redes contra ameaças, realize testes de penetração (pentest) do básico ao avançado e entre para uma das profissões mais requisitadas e bem remuneradas da área.</h2>
-						</div>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -291,7 +335,7 @@
                     <div class="col-md-6 col-sm-6 to-animate">
                         <i class="icon-book icon-big"></i>
                         <h3>Curso Adicional Gratuito</h3>
-                        <p>Além disso, você terá acesso gratuito a um curso na plataforma Senai App para continuar aprimorando suas habilidades.</p>
+                        <p>Além disso, você terá acesso gratuito ao Curso Introdução à Cibersegurança(Cisco) 100% on-line para continuar aprimorando suas habilidades.</p>
                     </div>
                 </div>
             </div>
@@ -343,23 +387,12 @@
                       <h2 class="to-animate">Invista em sua Carreira</h2>
                       <div class="col-md-8 col-md-offset-2 subtext">
                           <h3 class="to-animate">Aprimore suas habilidades em segurança cibernética com nossos planos de treinamento flexíveis e acessíveis. Aproveite nossa oferta especial de pagamento:</h3>
-                          <h3 class="to-animate">Parcelas de R$ 280,00 no cartão em até 10x ou 6x no boleto. <a href="#" class="btn btn-primary">Inscreva-se agora</a></h3>
                       </div>
                   </div>
               </div>
   
-              <div class="row">              
-                  <div class="col-md-6 col-sm-6">
-                    <div class="price-box popular to-animate">
-                        <h2 class="pricing-plan">Intermediário</h2>
-                        <div class="price">10x de 280,00 no cartão <br> ou <br> 6x de 466,00 no boleto</div>
-                        <div class="price">Duração: 60 horas</div>
-                        <p>Domine técnicas avançadas em monitoramento de ameaças e resposta a incidentes cibernéticos.</p>
-                        <hr>
-                        <p><a href="#" class="btn btn-primary">Inscreva-se</a></p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6">
+              <div class="row">           
+                  <div class="col-md-offset-3 col-md-6 col-sm-6">
                       <div class="price-box popular to-animate">
                           <div class="popular-text">Melhor Valor</div>
                           <h2 class="pricing-plan">Completo</h2>
@@ -367,7 +400,7 @@
                           <div class="price">Duração: 60 horas</div>
                           <p>Domine técnicas avançadas em monitoramento de ameaças e resposta a incidentes cibernéticos.</p>
                           <hr>
-                          <p><a href="#" class="btn btn-primary">Inscreva-se</a></p>
+                          <p><a href="https://forms.office.com/pages/responsepage.aspx?id=El6Hb28P_0-9vtVSJU52U3jBIZ87bCBFlZsXBNgWXThUQzhRMEYwN0kyUlE1S1c5RFJPNFFUSEtYVi4u" class="btn btn-primary" target="_blank">Inscreva-se</a></p>
                       </div>
                   </div>
                   
@@ -375,7 +408,7 @@
   
               <div class="row">
                   <div class="col-md-6 col-md-offset-3 col-md-push-3 to-animate">
-                      <p>Aprimore suas habilidades em segurança cibernética com nossos planos de treinamento flexíveis. Aproveite nossa oferta especial. <a href="#" class="btn btn-primary">Inscreva-se agora</a></p>
+                      <p>Desenvolva suas competências em segurança cibernética através dos nossos programas de treinamento versáteis. Não perca a chance de aproveitar nossa oferta especial enquanto ela está disponível. <a href="https://forms.office.com/pages/responsepage.aspx?id=El6Hb28P_0-9vtVSJU52U3jBIZ87bCBFlZsXBNgWXThUQzhRMEYwN0kyUlE1S1c5RFJPNFFUSEtYVi4u" target="_blank" class="btn btn-primary">Inscreva-se agora</a></p>
                   </div>
               </div>
           </div>
@@ -401,8 +434,18 @@
 						<div class="team-box text-center to-animate-2">
 							<div class="user"><img class="img-reponsive" src="images/depoimento-caio.jpg" alt="Roger Garfield"></div>
                             <h3>Caio Melo</h3>
-                            <span class="position">Desenvolvedora Web</span>
-                            <p>"O curso de segurança cibernética me proporcionou um conhecimento fundamental para minha carreira como desenvolvedora. Recomendo a todos que desejam aprimorar suas habilidades."</p>
+                            <span class="position">Analista de Infraestrutura</span>
+                            <p>"O curso técnico no Senai me proporcionou extenso conhecimento na área de tecnologia, além do networking e muitas oportunidades profissionais!"</p>
+							
+						</div>
+					</div>
+
+                    <div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="images/depoimento-rebeca.jpg" alt="Roger Garfield"></div>
+                            <h3>Rebeca Rodrigues</h3>
+                            <span class="position">Técnico em Informática</span>
+                            <p>"Com os cursos do Senai, entrei na área de TI. A didática, os professores e a instituição me capacitaram bem. Estou no mercado graças a eles e pretendo continuar me aprimorando. Só tenho a agradecer e recomendar. Minha experiência foi transformadora."</p>
 							
 						</div>
 					</div>
@@ -411,21 +454,13 @@
 						<div class="team-box text-center to-animate-2">
 							<div class="user"><img class="img-reponsive" src="images/depoimento-jonny.jpg" alt="Roger Garfield"></div>
                             <h3>Jhonny Fernandes</h3>
-                            <span class="position">Analista de Segurança</span>
-                            <p>"Os cursos oferecidos pela plataforma me ajudaram a conquistar uma posição como analista de segurança em uma grande empresa. Estou muito grato pela qualidade do conteúdo e dos instrutores."</p>
+                            <span class="position">Analista de Instalação Cloud</span>
+                            <p>"Após me formar no Senai como técnico em redes de computadores e ingressar no mercado de trabalho na área de TI, percebi que o curso de cybersegurança é uma ótima oportunidade para quem quer se aprimorar nesse campo em constante crescimento."</p>
 							
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="images/user-3.jpg" alt="Roger Garfield"></div>
-                            <h3>Larissa Oliveira</h3>
-                            <span class="position">Engenheira de Software</span>
-                            <p>"Como engenheira de software, estava procurando por cursos que me ajudassem a entender melhor as práticas de segurança. Encontrei tudo o que precisava aqui e recomendo a plataforma para todos os profissionais da área."</p>
-							
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -441,16 +476,16 @@
                 <div class="col-lg-12 text-center zindex-1">    
                   <div class="section-heading p-3">
                     <h3 class="fw-bold text-capitalize text-center">
-                      O curso <em>Ciberseguança</em>, mais o curso de xxxxx, juntos valem mais que <em>R$ xxx,xx Reais</em>. Mais ainda assim, temos uma promoção especial para você!
+                      O curso <em>Cibersegurança presencial</em>, mais o curso de Introdução a Cibersegurança(Cisco) on-line, juntos valem mais que <em>R$5.000,00 Reais</em>. Mais ainda assim, temos uma promoção especial para você!
                     </h3>
                     <h2 id="hotmart" class="display-3-1 fw-bold">Aproveite o super <em>desconto.</em></h2>
                     <h3 class="display-3-2 fw-bold text-capitalize text-center">
-                      Comprando hoje você terá acesso ao curso Ciberseguança, e ao curso de xxxxxxxxx. <em>(atenção: As Inscrições São Limitadas)</em>
+                      Comprando hoje você terá acesso ao curso Cibersegurança Presencial, e ao curso de Introdução à Cibersegurança(Cisco) 100% online. <em>(atenção: As Inscrições São Limitadas)</em>
                     </h3>
-                    <h2 class="display-3-3 fw-bold">De <strike>R$5.000,00</strike> Por <em>R$2.800,00</em><br>ou em até 10 de 280,00 no cartão de crédito</h5>
+                    <h2 class="display-3-3 fw-bold">De <strike>R$5.000,00</strike> Por <em>R$2.800,00</em><br>ou em até 10x de 280,00 no cartão de crédito</h5>
                   </div>
           
-                <p><a href="#" class="btn btn-primary">Adquira já</a></p>
+                <p><a href="https://forms.office.com/pages/responsepage.aspx?id=El6Hb28P_0-9vtVSJU52U3jBIZ87bCBFlZsXBNgWXThUQzhRMEYwN0kyUlE1S1c5RFJPNFFUSEtYVi4u" class="btn btn-primary">Adquira já</a></p>
 
                 </div>
               </div>
@@ -458,7 +493,7 @@
     </div>
 </div>
 
-	<div id="fh5co-footer" role="contentinfo">
+<div id="fh5co-footer" role="contentinfo">
     <div class="container">
         <div class="row">
             <div class="col-md-4 to-animate">
@@ -475,24 +510,14 @@
                 </ul>
             </div>
             <div class="col-md-4 to-animate">
-                <h3 class="section-title">Solicite nosso contato</h3>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name" class="sr-only">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="sr-only">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone" class="sr-only">Telefone (WhatsApp)</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Telefone (WhatsApp)" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Enviar">
-                    </div>
-                </form>
+                <h3 class="section-title">Proteção e Análise</h3>
+                <ul class="contact-info">
+                    <li><i class="icon-globe2"></i>Pentest</li>
+                    <li><i class="icon-globe2"></i>Vulnerabilidade</li>
+                    <li><i class="icon-globe2"></i>Engenharia Social</li>
+                    <li><i class="icon-globe2"></i>IDS/IPS</li>
+                    <li><i class="icon-globe2"></i>Exploits</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -500,10 +525,11 @@
 
 
 
-<a href="https://wa.me/5531999554185?text=Gostaria%20de%20mais%20informações%20sobre:%20Senai - Cibersegurança" style="position:fixed;width:60px;height:60px;bottom:40px;right:200px;color:#FFF;border-radius:50px;text-align:center;font-size:30px;
-  z-index:1000;" target="_blank">
-<img src='images/whatsapp.png'>
-</a>
+<a href="https://api.whatsapp.com/send?phone=5531999554185" class="whatsapp-icon" target="_blank" rel="noopener noreferrer">
+    <img src="images/whats.webp" width="100" alt="WhatsApp Icon">
+    <span class="tooltip">Dúvidas?</span>
+  </a>
+
 
 <audio id="myAudio" autoplay>
     <source src="https://media.geeksforgeeks.org/wp-content/uploads/20231004184006/SoundHelix-Song-10.mp3" type="audio/mpeg">
